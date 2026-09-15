@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Antigram — tez, xavfsiz va bepul messenger. Do'stlaringiz bilan xabar almashing, guruh chatlar tashkillashtiring va fayllarni yuboring.">
+  <title>Antigram — Tez, xavfsiz va bepul messenger</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a href="#" class="logo" aria-label="Antigram bosh sahifa">
+        <svg class="logo-icon" viewBox="0 0 24 24" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M12 3C7.03 3 3 6.58 3 11c0 1.73.63 3.32 1.69 4.61L4 19l3.6-1.15A9.62 9.62 0 0 0 12 18.99c4.97 0 9-3.58 9-8s-4.03-8-9-8Z" fill="url(#logoGrad)"/>
+          <defs>
+            <linearGradient id="logoGrad" x1="3" y1="3" x2="21" y2="21">
+              <stop stop-color="#2AABEE"/><stop offset="1" stop-color="#7C5CFF"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="logo-text">Antigram</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#features">Xususiyatlar</a></li>
+        <li><a href="#app">Ilova</a></li>
+        <li><a href="#compare">Taqqoslash</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#" class="btn btn-ghost">Kirish</a>
+        <a href="#" class="btn btn-primary btn-sm">Ro'yxatdan o'tish</a>
+      </div>
+
+      <button class="burger" id="burgerBtn" aria-label="Menyuni ochish" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#features">Xususiyatlar</a>
+      <a href="#app">Ilova</a>
+      <a href="#compare">Taqqoslash</a>
+      <div class="mobile-menu-actions">
+        <a href="#" class="btn btn-ghost">Kirish</a>
+        <a href="#" class="btn btn-primary">Ro'yxatdan o'tish</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero" id="home">
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <span class="badge">Beta versiyasi endi mavjud</span>
+        <h1>Tez, xavfsiz va <span class="gradient-text">bepul</span> messenger</h1>
+        <p class="hero-desc">
+          Antigram — xabarlaringizni soniyalarda yetkazuvchi zamonaviy messenger.
+          Do'stlaringiz va oilangiz bilan bog'lanib qoling — istalgan joyda, istalgan qurilmada.
+        </p>
+        <div class="hero-actions">
+          <a href="#" class="btn btn-primary btn-lg">Hoziroq boshlash</a>
+          <a href="#features" class="btn btn-outline btn-lg">Xususiyatlarni ko'rish</a>
+        </div>
+        <ul class="hero-stats">
+          <li><strong>0.1s</strong><span>Xabar tezligi</span></li>
+          <li><strong>100%</strong><span>Bepul</span></li>
+          <li><strong>24/7</strong><span>Onlayn rejim</span></li>
+        </ul>
+      </div>
+
+      <!-- CSS mockup phone -->
+      <div class="hero-visual" aria-hidden="true">
+        <div class="phone">
+          <div class="phone-top">
+            <span></span>
+          </div>
+          <div class="chat">
+            <div class="chat-header">
+              <div class="chat-avatar"></div>
+              <div>
+                <strong>Antigram Guruh</strong>
+                <small>12 458 a'zo</small>
+              </div>
+            </div>
+            <div class="chat-body">
+              <div class="bubble received">Salom! Yangi versiya chiqdi 🎉</div>
+              <div class="bubble sent">Ajoyib! Hoziroq ko'raman</div>
+              <div class="bubble received">Endi fayllar 2x tez jo'natiladi</div>
+              <div class="bubble sent">Zo'r, guruhga ham ulashib beraman 👍</div>
+            </div>
+            <div class="chat-input">
+              <span>Xabar yozing...</span>
+              <span class="send-btn"></span>
+            </div>
+          </div>
+        </div>
+        <div class="floating-card card-1">🔒 Shifrlangan</div>
+        <div class="floating-card card-2">⚡ 0.1s tezlik</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Features -->
+  <section class="section features" id="features">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Xususiyatlar</span>
+        <h2>Sizga kerak bo'lgan hamma narsa, bitta ilovada</h2>
+        <p>Antigram Telegram'ning eng yaxshi imkoniyatlaridan ilhomlangan holda, ularni yangi darajada taqdim etadi.</p>
+      </div>
+
+      <div class="features-grid">
+        <article class="feature-card reveal">
+          <div class="feature-icon">⚡</div>
+          <h3>Tezkor xabar almashish</h3>
+          <p>Xabarlar soniyalarda yetib boradi. Internet holatidan qat'iy nazar, aloqa uzilmaydi.</p>
+        </article>
+
+        <article class="feature-card reveal">
+          <div class="feature-icon">👥</div>
+          <h3>Guruh chatlar</h3>
+          <p>200 000 a'zogacha guruhlar tashkil qiling, kanallar oching va ommaviy xabarlar yuboring.</p>
+        </article>
+
+        <article class="feature-card reveal">
+          <div class="feature-icon">📎</div>
+          <h3>Fayl yuborish</h3>
+          <p>2 GB gacha bo'lgan fayllarni, fotosurat va videolarni sifatini yo'qotmasdan almashing.</p>
+        </article>
+
+        <article class="feature-card reveal">
+          <div class="feature-icon">🔒</div>
+          <h3>Yuqori darajadagi xavfsizlik</h3>
+          <p>Xabarlaringiz end-to-end shifrlash bilan himoyalanadi. Boshqa hech kim ham o'qiy olmaydi.</p>
+        </article>
+
+        <article class="feature-card reveal">
+          <div class="feature-icon">☁️</div>
+          <h3>Bulutli zaxira nusxasi</h3>
+          <p>Qurilmani almashtiringmi? Tarixingiz va fayllaringiz barcha qurilmalarda sinxron saqlanadi.</p>
+        </article>
+
+        <article class="feature-card reveal">
+          <div class="feature-icon">📞</div>
+          <h3>Ovozli va video qo'ng'iroqlar</h3>
+          <p>Yuqori sifatli ovozli va video qo'ng'iroqlar — to'liq bepul, qo'shimcha to'lovlarsiz.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- App / Mockup -->
+  <section class="section app" id="app">
+    <div class="container app-inner">
+      <div class="app-visual reveal" aria-hidden="true">
+        <div class="app-window">
+          <div class="sidebar">
+            <div class="search-bar"></div>
+            <div class="sidebar-item active">
+              <span class="side-avatar"></span>
+              <div class="side-text"><span class="line l1"></span><span class="line l2"></span></div>
+            </div>
+            <div class="sidebar-item">
+              <span class="side-avatar"></span>
+              <div class="side-text"><span class="line l1"></span><span class="line l2"></span></div>
+            </div>
+            <div class="sidebar-item">
+              <span class="side-avatar"></span>
+              <div class="side-text"><span class="line l1"></span><span class="line l2"></span></div>
+            </div>
+          </div>
+          <div class="chat-panel">
+            <div class="chat-panel-header"></div>
+            <div class="chat-panel-body">
+              <div class="bubble received">Xush kelibsiz! 🎉</div>
+              <div class="bubble sent">Rahmat, juda qulay ilova ekan</div>
+              <div class="bubble received">Yangiliklar uchun kanalga obuna bo'ling</div>
+            </div>
+          </div>
+        </div>
+        <p class="app-caption">Ilova interfeysining namoyishi — yaqin orada rasmiy skrinshotlar qo'shiladi</p>
+      </div>
+
+      <div class="app-content">
+        <span class="section-tag">Ilova</span>
+        <h2>Har bir qurilmada uyg'un ishlaydi</h2>
+        <p>Antigram telefon, planshet va kompyuterlarda bir xil zo'r ishlaydi. Xabarlaringiz barcha qurilmalarda bir vaqtda sinxronlanadi.</p>
+        <ul class="benefit-list">
+          <li>Telefon, planshet va desktop versiyalar</li>
+          <li>Bijamaydigan (loyqa bo'lmaydigan) fayl sifat</li>
+          <li>Keng guruhlar uchun moderator vositalari</li>
+          <li>Internet kam bo'lgan hududlarda ham optimallashtirilgan</li>
+        </ul>
+        <a href="#" class="btn btn-primary">Ilovani yuklab olish</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Compare -->
+  <section class="section compare" id="compare">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Taqqoslash</span>
+        <h2>Nega Antigram?</h2>
+        <p>Boshqa messenjerlar bilan solishtirganda Antigram qanday ajralib turadi — o'zingiz ko'ring.</p>
+      </div>
+
+      <div class="table-wrap reveal">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>Imkoniyat</th>
+              <th>Antigram</th>
+              <th>An'anaviy messenjerlar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>To'liq bepul</td>
+              <td class="yes">✔ Ha</td>
+              <td class="no">Qisman / abonement</td>
+            </tr>
+            <tr>
+              <td>End-to-end shifrlash</td>
+              <td class="yes">✔ Ha</td>
+              <td class="no">Faollashtirish talab etiladi</td>
+            </tr>
+            <tr>
+              <td>Fayl yuborish (2 GB gacha)</td>
+              <td class="yes">✔ Ha</td>
+              <td class="no">Cheklangan (25–100 MB)</td>
+            </tr>
+            <tr>
+              <td>Guruhlar (200 000 a'zo)</td>
+              <td class="yes">✔ Ha</td>
+              <td class="no">Cheklangan (512 a'zo)</td>
+            </tr>
+            <tr>
+              <td>Bulutli saqlash</td>
+              <td class="yes">✔ Cheksiz</td>
+              <td class="no">Cheklangan</td>
+            </tr>
+            <tr>
+              <td>Reklama</td>
+              <td class="yes">✔ Yo'q</td>
+              <td class="no">Mavjud</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta">
+    <div class="container cta-box">
+      <h2>Antigram dunyosiga qadam qo'ying</h2>
+      <p>Ro'yxatdan o'tish 30 soniya vaqt oladi. Do'stlaringizni taklif qiling, shunda ikkalangiz ham bonus olasiz.</p>
+      <a href="#" class="btn btn-primary btn-lg">Hoziroq boshlash</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <svg class="logo-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M12 3C7.03 3 3 6.58 3 11c0 1.73.63 3.32 1.69 4.61L4 19l3.6-1.15A9.62 9.62 0 0 0 12 18.99c4.97 0 9-3.58 9-8s-4.03-8-9-8Z" fill="url(#footerGrad)"/>
+            <defs>
+              <linearGradient id="footerGrad" x1="3" y1="3" x2="21" y2="21">
+                <stop stop-color="#2AABEE"/><stop offset="1" stop-color="#7C5CFF"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <span class="logo-text">Antigram</span>
+        </a>
+        <p>Tez, xavfsiz va bepul messenger. Xabarlaringiz soniyalarda yetadi.</p>
+        <div class="socials">
+          <a href="#" aria-label="Telegram" class="social-link">✈</a>
+          <a href="#" aria-label="Instagram" class="social-link">📷</a>
+          <a href="#" aria-label="YouTube" class="social-link">▶</a>
+          <a href="#" aria-label="X" class="social-link">𝕏</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Ilova</h4>
+        <a href="#">Android</a>
+        <a href="#">iOS</a>
+        <a href="#">Desktop</a>
+        <a href="#">Web versiya</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Kompaniya</h4>
+        <a href="#">Biz haqimizda</a>
+        <a href="#">Blog</a>
+        <a href="#">Karyera</a>
+        <a href="#">Matbuot</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Qo'llab-quvvatlash</h4>
+        <a href="#">Yordam markazi</a>
+        <a href="#">Xavfsizlik</a>
+        <a href="#">Maxfiylik siyosati</a>
+        <a href="#">Foydalanish shartlari</a>
+      </div>
+
+      <div class="footer-col footer-contact">
+        <h4>Bog'lanish</h4>
+        <a href="mailto:hello@antigram.app">hello@antigram.app</a>
+        <a href="tel:+998900000000">+998 90 000 00 00</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 Antigram. Barcha huquqlar himoyalangan.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
